@@ -10,4 +10,4 @@ cd statustrackerbot
 pip install -r requirements.txt
 python3 start.py
 ```
-Please note that python and pip must be installed and added to PATH
+Please note that [python](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) must be installed and added to PATH
