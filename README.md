@@ -3,7 +3,7 @@ Status/Moderation bot used by FStimelapses stock tracking service
 
 
 # Installation
-Download the latest release
+Installing the latest release
 ```shell
 git clone https://github.com/Mr-Tech-13/statustrackerbot.git
 cd statustrackerbot
