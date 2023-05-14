@@ -1,0 +1,14 @@
+$offline: Offline Embed
+$online: Online Embed 
+$warning: [message] 
+$error: [title] 
+$clear: clears channel 
+$stop: Stops bot ASAP 
+$shutdown: Shuts down the bot nicely 
+$colors: Shows color coding
+$stream: Shows streams
+$streamup: Change channel status
+$streamdown: Change channel Status
+$kick: [@username]
+$ban: [@username]
+$unban: [@username]
