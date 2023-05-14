@@ -12,16 +12,16 @@ embed_message_id = None # define the variable to store the message ID
 
 @client.event
 async def on_ready():
-  #  channel = client.get_channel(channel_id)
-  #  await channel.purge()
-  #  await channel.edit(name='\N{LARGE RED CIRCLE} Service-Status')
-  #  embed = discord.Embed(title='Service Status', description=':red_circle: Service Offline',color=0xff0000)
-  #  embed.set_author(name='*This embed updates when the service status changes*')
-  #  message = await channel.send(embed=embed)
-  #  global embed_message_id
-  #  embed_message_id = message.id
-  #  with open('message_id.txt', 'w') as f:
-  #      f.write(str(embed_message_id))
+    channel = client.get_channel(channel_id)
+    await channel.purge()
+    await channel.edit(name='\N{LARGE RED CIRCLE} Service-Status')
+    embed = discord.Embed(title='Service Status', description=':red_circle: Service Offline',color=0xff0000)
+    embed.set_author(name='*This embed updates when the service status changes*')
+    message = await channel.send(embed=embed)
+    global embed_message_id
+    embed_message_id = message.id
+    with open('message_id.txt', 'w') as f:
+        f.write(str(embed_message_id))
 
     #  
     #  await channel.edit(name='\N{LARGE GREEN CIRCLE} Service-Status')
