@@ -5,7 +5,8 @@ build/
 coverage/
 node_modules/
 commands/
-Dev_stuff
+Dev_stuff/
+.DS_Store
 
 .env
 dotenv
