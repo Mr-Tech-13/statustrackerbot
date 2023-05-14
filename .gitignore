@@ -9,6 +9,7 @@ Dev_stuff/
 .DS_Store
 
 .env
+main.py
 dotenv
 *.proxies
 success-*.png
