@@ -9,6 +9,10 @@ $colors: Shows color coding
 $stream: Shows streams
 $streamup: Change channel status
 $streamdown: Change channel Status
-$kick: [@username]
-$ban: [@username]
+$kick: [@username] [Reason]
+$ban: [@username] [Reason]
 $unban: [@username]
+$mute: [@username] [Reason]
+$unmute: [@username] [Reason]
+$warn: [@username] [Reason]
+$purge: [Number of messages to purge]
