@@ -247,5 +247,6 @@ async def kick(ctx, member: discord.Member, *, reason=None):
         await ctx.send("You do not have permission to use this command.")
 
 
+
 # Run the bot using the token
 client.run(token)
