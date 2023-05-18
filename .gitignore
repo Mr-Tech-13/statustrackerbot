@@ -12,11 +12,13 @@ cache/
 main.py
 cache.txt
 dotenv
+guild.txt
+token.txt
+message_id.txt
 *.proxies
 success-*.png
 screenshots/
-token.txt
-message_id.txt
+
 
 *.wav
 *.mp3
