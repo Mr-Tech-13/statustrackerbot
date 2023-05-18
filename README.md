@@ -18,7 +18,7 @@ Please note that [python](https://www.python.org/downloads/) and [pip](https://p
 |Make Bot| :white_check_mark:|
 |Release Bot|:white_check_mark:|
 |Convert to Typescript|:red_circle:|
-|Add slash commands|:red_circle:|
+|Add slash commands|:yellow_circle:|
 
 ## Color Code
 
