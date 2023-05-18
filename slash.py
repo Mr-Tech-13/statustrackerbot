@@ -7,11 +7,18 @@ with open('token.txt') as f:
     token = f.readline().strip()
     channel_id = int(f.readline().strip())
 
+with open('guild.txt') as f:
+    guild = int(f.readline().strip())
+
 client = commands.Bot(command_prefix='$', intents=discord.Intents.all())
+intents = discord.Intents.default()
 embed_message_id = None # define the variable to store the message ID
+client = discord.Client(intents=intents)
+tree = commands.CommandTree(client)
 
 @client.event
 async def on_ready():
+    await tree.sync(guild=discord.Object(id=guild))
   #  channel = client.get_channel(channel_id)
   #  await channel.purge()
   #  await channel.edit(name='\N{LARGE RED CIRCLE} Service-Status')
@@ -36,6 +43,19 @@ async def on_ready():
 
     print('Bot is ready')
 
+
+@tree.command(name = "offline", description = "Use this command to show the status of the bot as offline")
+async def offline(ctx):
+    await ctx.channel.purge()
+    channel = ctx.channel
+    await channel.edit(name='\N{LARGE RED CIRCLE} Service-Status')
+    embed = discord.Embed(title='Service Status', description=':red_circle: Service Offline',color=0xff0000)
+    embed.set_author(name='*This embed updates when the service status changes*')
+    message = await ctx.send(embed=embed)
+    global embed_message_id
+    embed_message_id = message.id
+    with open('message_id.txt', 'w') as f:
+        f.write(str(embed_message_id))
 
 @client.command()
 async def offline(ctx):
