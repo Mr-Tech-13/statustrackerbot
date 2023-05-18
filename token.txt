@@ -1,0 +1,2 @@
+"Replace with bot token"
+"Replace with channel id of channel where you want update messages to be sent to"
