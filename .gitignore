@@ -5,11 +5,12 @@ build/
 coverage/
 node_modules/
 commands/
-Dev_stuff/
+cache/
 .DS_Store
 
 .env
 main.py
+cache.txt
 dotenv
 *.proxies
 success-*.png
