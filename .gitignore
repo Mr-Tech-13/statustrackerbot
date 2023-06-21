@@ -6,6 +6,7 @@ coverage/
 node_modules/
 commands/
 cache/
+misc/
 .DS_Store
 
 .env

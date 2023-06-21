@@ -1,7 +1,10 @@
-import * as Discord from 'discord.js';
+import Discord, { Client, GatewayIntentBits, Partials } from "discord.js";
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 
-const client = new Discord.Client({ intents: Discord.Intents.ALL });
+const client = new Discord.Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildModeration, GatewayIntentBits.GuildInvites, GatewayIntentBits.GuildPresences, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.DirectMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildVoiceStates],
+});
 const commandPrefix = '$';
 let embedMessageId: string | null = null; // define the variable to store the message ID
 
