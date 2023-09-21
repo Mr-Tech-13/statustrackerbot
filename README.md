@@ -1,5 +1,6 @@
 # Status Tracker Bot
 Status/Moderation bot used by FStimelapses stock tracking service
+[![Docker Image CI](https://github.com/Mr-Tech-13/statustrackerbot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Mr-Tech-13/statustrackerbot/actions/workflows/docker-image.yml)
 
 
 # Installation
