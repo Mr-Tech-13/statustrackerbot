@@ -1,5 +1,6 @@
 # Status Tracker Bot
 Status/Moderation bot used by FStimelapses stock tracking service
+[![Docker Image CI](https://github.com/Mr-Tech-13/statustrackerbot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Mr-Tech-13/statustrackerbot/actions/workflows/docker-image.yml)
 
 
 # Installation
@@ -31,8 +32,8 @@ Please note that [python](https://www.python.org/downloads/) and [pip](https://p
 
 
 # Questions??
-Feel free to post in the [issues](https://github.com/Mr-Tech-13/statustrackerbot/issues) section of this repository, or [message me on discord](https://github.com/Mr-Tech-13/images/blob/main/Discord%20Contact.png)
+Feel free to post in the [issues](https://github.com/Mr-Tech-13/statustrackerbot/issues) section of this repository, or [message me on discord](https://github.com/Mr-Tech-13/images/blob/main/Discord%20COntact.jpeg)
 
 
 #
-![a gpu person#1313](https://github.com/Mr-Tech-13/images/blob/main/Discord%20Contact.png)
+![a gpu person#1313](https://github.com/Mr-Tech-13/images/blob/main/Discord%20COntact.jpeg)
