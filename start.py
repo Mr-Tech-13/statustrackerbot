@@ -166,6 +166,11 @@ async def streamdown(ctx):
     await ctx.message.delete()
     await channel.edit(name='\N{LARGE RED CIRCLE} Streams')
 
+@client.command()
+async def ping(ctx):
+    channel = ctx.channel
+    await ctx.send('pong')
+
 
 # Ban a user from the server
 @client.command()
