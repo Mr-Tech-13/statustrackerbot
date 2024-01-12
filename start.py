@@ -3,13 +3,13 @@ import asyncio
 import discord
 from discord.ext import commands
 
-# Read the token and channel ID from the file
+# Reads the token and channel ID from the file
 with open('token.txt') as f:
     token = f.readline().strip()
     channel_id = int(f.readline().strip())
 
 client = commands.Bot(command_prefix='$', intents=discord.Intents.all())
-embed_message_id = None # define the variable to store the message ID
+embed_message_id = None # defines the variable to store the message ID
 
 @client.event
 async def on_ready():
@@ -37,6 +37,7 @@ async def on_ready():
 
     print('Bot is ready')
 
+#commands
 
 @client.command()
 async def offline(ctx):
@@ -68,7 +69,7 @@ async def error(ctx, title, description):
     channel = ctx.channel
     await channel.edit(name='\N{LARGE YELLOW CIRCLE} Service-Status')
     await ctx.channel.purge()
-    embeda = discord.Embed(title='Service Status', description=':orange_circle: Online with errors, see below', color=0xFFFF00)
+    embeda = discord.Embed(title='Service Status', description=':yellow_circle: Online with errors, see below', color=0xFFFF00)
     embeda.set_author(name='*This embed updates when the service status changes*')
     message = await ctx.send(embed=embeda)
     embed = discord.Embed(title=':yellow_circle: Caution', description=messagea, color=0xFFFF00)
@@ -171,14 +172,13 @@ async def ping(ctx):
     channel = ctx.channel
     await ctx.send('pong')
 
+# moderation commands
 
-# Ban a user from the server
 @client.command()
 async def ban(ctx, member : discord.Member, *, reason=None):
     await member.ban(reason=reason)
     await ctx.send(f'{member} has been banned.')
 
-# Unban a user from the server
 @client.command()
 async def unban(ctx, *, member):
     banned_users = await ctx.guild.bans()
